@@ -11,8 +11,8 @@ jobs:
     name: Deploy my Great Databricks Pipeline to production
     uses: .github/workflows/reusable_databricks_code_deployment.yml
     with:
-      databricks_code_path: "Pipelines/prod/my_great_pipeline"
-      service_code_file: "src/code/pipeline.py"
+      databricks_code_path: "/Workspace/Users/singhanat.rer@kmutt.ac.th"
+      service_code_file: "main.py"
     secrets:
       DATABRICKS_HOST_URL: ${{ secrets.MY_DATABRICKS_HOST }}
       DATABRICKS_TOKEN: ${{ secrets.MY_DATABRICKS_TOKEN }}
