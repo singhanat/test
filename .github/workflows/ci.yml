@@ -11,7 +11,7 @@ jobs:
     name: Deploy my Great Databricks Pipeline to production
     uses: singhanat/test/.github/workflows/reusable_databricks_code_deployment.yml@v4.0.0
     with:
-      databricks_code_path: "/Users/singhanat.rer@kmutt.ac.th"
+      databricks_code_path: "Users/singhanat.rer@kmutt.ac.th"
       service_code_file: "main.py"
     secrets:
       DATABRICKS_HOST_URL: ${{ secrets.MY_DATABRICKS_HOST }}
